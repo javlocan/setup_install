@@ -12,8 +12,8 @@ for pkg in "${packages_list[@]}"; do
 	else
 		echo "------------------------------------"
 		echo "installing $pkg..."
-		yay -S -q "$pkg"
-		#yes | yay -S -q "$pkg"
+		#yay -S -q "$pkg"
+		yes | yay -S -q "$pkg"
 	fi
 done
 

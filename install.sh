@@ -24,6 +24,7 @@ core_packages_list=(
 	"alacritty"
 	"tmux"
 	"tmux-plugin-manager"
+	"neovim"
 	)
 
 source "./scripts/check-and-install-packages.sh" "${core_packages_list[@]}"
@@ -39,9 +40,13 @@ ln -s -f "${DOTFILES_DIR}/zshrc" "$HOME/.zshrc"
 ln -s -f "${DOTFILES_DIR}/alacritty.yml" "$HOME/.alacritty.yml"
 ln -s -f "${DOTFILES_DIR}/tmux.conf" "$HOME/.tmux.conf"
 ln -s -f "${DOTFILES_DIR}/starship.toml" "$HOME/.config/starship.toml"
+#test -d "~/.xkb/" || mkdir ~/.xkb
+test -d "~/.xkb/" && mkdir ~/.xkb
+ln -s -f "${DOTFILES_DIR}/custom_xkb_layout" "$HOME/.xkb/custom"
 
-test -d '~/.config/nvim' && rm -rf "$HOME/.config/nvim"
-ln -s -f "${DOTFILES_DIR}/nvim/" "$HOME/.config/nvim"
+test -d '~/.config/nvim/' || rm -rf "$HOME/.config/nvim"
+mkdir "$HOME/.config/nvim/"  
+cp -rf "${DOTFILES_DIR}/nvim/." "$HOME/.config/nvim"
 
 echo "------------------------------------"
 '/usr/share/tmux-plugin-manager/scripts/source_plugins.sh'
