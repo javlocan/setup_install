@@ -52,11 +52,6 @@ echo "------------------------------------"
 '/usr/share/tmux-plugin-manager/scripts/source_plugins.sh'
 '/usr/share/tmux-plugin-manager/scripts/install_plugins.sh'
 
-if test $ZSH_NAME != zsh; then
-	sudo chsh -s /bin/zsh #<<< "$passwd" 
-	zsh
-fi
-
 #alacritty --hold --working-directory "$(pwd)" -e "$(pwd)/keep-going.sh"
 
 utils_list=(
@@ -74,3 +69,8 @@ pacman -Qs auto-cpufreq	&&
 #sway stuff
 #./config/sway/config && .config/sway/default sobre todo
 echo "------------------------------------"
+if test $ZSH_NAME != zsh; then
+	sudo chsh -s /bin/zsh #<<< "$passwd" 
+	zsh
+fi
+
