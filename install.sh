@@ -43,10 +43,14 @@ ln -s -f "${DOTFILES_DIR}/starship.toml" "$HOME/.config/starship.toml"
 #test -d "~/.xkb/" || mkdir ~/.xkb
 test -d "~/.xkb/" && mkdir ~/.xkb
 ln -s -f "${DOTFILES_DIR}/custom_xkb_layout" "$HOME/.xkb/custom"
+sudo ln -s -f "${DOTFILES_DIR}/custom-xkb-layout" "/usr/share/X11/xkb/symbols/custom"
 
 test -d '~/.config/nvim/' || rm -rf "$HOME/.config/nvim"
-mkdir "$HOME/.config/nvim/"  
+mkdir "$HOME/.config/nvim"  
 cp -rf "${DOTFILES_DIR}/nvim/." "$HOME/.config/nvim"
+cp -rf "${DOTFILES_DIR}/sway/." "$HOME/.config/sway"
+cp -rf "${DOTFILES_DIR}/waybar/." "$HOME/.config/waybar"
+
 
 echo "------------------------------------"
 '/usr/share/tmux-plugin-manager/scripts/source_plugins.sh'
