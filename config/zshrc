@@ -3,6 +3,10 @@
 APP_DIR="/usr/share"
 PLUGINS_DIR="${APP_DIR}/zsh/plugins"
 
+# colors
+zstyle ':completion:*' list-colors ''
+alias ls="ls --color=auto"
+
 # cool stuff to have
 setopt AUTOCD
 

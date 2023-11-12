@@ -35,10 +35,13 @@ cp -rf "$(pwd)/config/." "$HOME/.dotfiles/"
 echo "------------------------------------"
 echo "configuring dotfiles..."
 
-ln -s -f "${DOTFILES_DIR}/zsh" "$HOME/.zshrc" 
+ln -s -f "${DOTFILES_DIR}/zshrc" "$HOME/.zshrc" 
 ln -s -f "${DOTFILES_DIR}/alacritty.yml" "$HOME/.alacritty.yml"
 ln -s -f "${DOTFILES_DIR}/tmux.conf" "$HOME/.tmux.conf"
 ln -s -f "${DOTFILES_DIR}/starship.toml" "$HOME/.config/starship.toml"
+
+test -d '~/.config/nvim' && rm -rf "$HOME/.config/nvim"
+ln -s -f "${DOTFILES_DIR}/nvim/" "$HOME/.config/nvim"
 
 echo "------------------------------------"
 '/usr/share/tmux-plugin-manager/scripts/source_plugins.sh'
