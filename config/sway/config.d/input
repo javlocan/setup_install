@@ -13,12 +13,9 @@ input type:touchpad {
 # Read `man 5 sway-input` for more information about this section.
 #
 input type:keyboard {
-    xkb_layout "es","custom"
+    xkb_layout "custom","es"
     xkb_options grp:rctrl_toggle
     xkb_options caps:escape
     }
 
-#exec_always {
-#    'swaymsg input type:keyboard xkb_layout "$(localectl status | grep "X11 Layout" | sed -e "s/^.*X11 Layout://")"'
-#    'swaymsg input type:keyboard xkb_variant "$(localectl status | grep "X11 Variant" | sed -e "s/^.*X11 Variant://")"'
-#}
+bindsym $mod+Space exec sway input type:keyboard xkb_switch_layout next && pkill -RTMIN+1 waybar
