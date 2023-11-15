@@ -105,6 +105,16 @@ exec swayidle -w\
     bindsym $mod+8 workspace number 8
     bindsym $mod+9 workspace number 9
     bindsym $mod+0 workspace number 10
+    bindsym $mod+exclam workspace number 1
+    bindsym $mod+quotedbl workspace number 2
+    bindsym $mod+numbersign workspace number 3
+    bindsym $mod+dollar workspace number 4
+    bindsym $mod+percent workspace number 5
+    bindsym $mod+ampersand workspace number 6
+    bindsym $mod+slash workspace number 7
+    bindsym $mod+parenleft workspace number 8
+    bindsym $mod+parenright workspace number 9
+    bindsym $mod+equal workspace number 10
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
     bindsym $mod+Shift+2 move container to workspace number 2

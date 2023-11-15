@@ -10,6 +10,6 @@ include $HOME/.config/sway/config.d/*
 
 # only enable this if every app you use is compatible with wayland
 # xwayland disable
-output * bg $HOME/.config/sway/sway.jpg fill
 
-exec_always fcitx5 -d --replace
+output * bg $HOME/.config/sway/sway.jpg fill
+#output * bg $HOME/.dotfiles/sway/sway.jpg fill
