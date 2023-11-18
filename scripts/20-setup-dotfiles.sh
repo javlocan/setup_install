@@ -28,3 +28,4 @@ ln -sfn "${DOTFILES_DIR}/swaylock" "$HOME/.config/swaylock"
 '/usr/share/tmux-plugin-manager/scripts/source_plugins.sh'
 '/usr/share/tmux-plugin-manager/scripts/install_plugins.sh'
 
+sway reload >> /dev/null
