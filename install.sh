@@ -10,7 +10,7 @@ SCRIPTS_DIR="$(pwd)/scripts"
 source "$SCRIPTS_DIR/00-export-variables.sh"
 source "$SCRIPTS_DIR/10-install-dotfiles.sh"
 source "$SCRIPTS_DIR/20-setup-dotfiles.sh"
-source "$SCRIPTS_DIR/30-utils.sh"
+#source "$SCRIPTS_DIR/30-utils.sh"
 
 
 #sway stuff
