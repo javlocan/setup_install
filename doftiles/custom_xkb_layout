@@ -23,7 +23,7 @@ xkb_symbols "developer" {
     key <AE07> {[          slash, 7, onehalf, seveneighths		]};
     key <AE08> {[          parenleft, 8, oneeighth, threeeighths	]};
     key <AE09> {[          parenright, 9, asciicircum			]};
-    key <AE10> {[          equal, 0, grave, dead_doubleacute		]};
+//    key <AE10> {[          equal, 0, grave, dead_doubleacute		]};
     key <AE11> {[ apostrophe, question, dead_macron, dead_ogonek	]};
     key <AE12> {[ exclamdown, questiondown, dead_breve, dead_abovedot	]};
     key <AD11>	{[ bracketleft, dead_grave, dead_circumflex, dead_abovering ]};
