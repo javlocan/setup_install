@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
+export hlfseparator="-----------------------"
 export separator="-----------------------------------------"
-export dblseparator=".........................................
------------------------------------------"
+export dblseparator="\n-----------------------------------------"
 
-echo $dblseparator
+echo -e $dblseparator
 echo "Sourcing variables..."
 echo $separator
 

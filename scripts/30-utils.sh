@@ -2,7 +2,7 @@
 
 source "./scripts/check-and-install-packages.sh" "${utils_list[@]}"
 
-echo $dblseparator
+echo -e $dblseparator
 echo "Installing utils..." 
 echo $separator
 pacman -Qs auto-cpufreq	&&

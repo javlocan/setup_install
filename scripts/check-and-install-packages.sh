@@ -2,14 +2,16 @@
 
 packages_list=("$@")
 
+echo $hlfseparator
+
 for pkg in "${packages_list[@]}"; do
 
 	if sudo pacman -Qs "$pkg" > /dev/null ; then
 		echo "$pkg already installed..."
-		echo $separator
+		echo $hlfseparator
 	else
 		echo "installing $pkg..."
-		echo $separator
+		echo $hlfseparator
 		#yay -S -q "$pkg"
 		yes | yay -S -q "$pkg"
 	fi
