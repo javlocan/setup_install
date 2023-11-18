@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo $separator
+echo $dblseparator
 echo "Proceeding to install core packages"
 echo $separator
 

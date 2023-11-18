@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
 export separator="-----------------------------------------"
+export dblseparator=".........................................
+-----------------------------------------"
 
-echo $separator
+echo $dblseparator
 echo "Sourcing variables..."
 echo $separator
 
@@ -15,8 +17,9 @@ export core_packages_list=(
 	"zsh-autosuggestions" 
 	"zsh-syntax-highlighting"
 	"zsh-thefuck-git"
-	"starship"
 	"ttf-jetbrains-mono-nerd"
+	"starship"
+	"fzf"
 	"alacritty"
 	"tmux"
 	"tmux-plugin-manager"
