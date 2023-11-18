@@ -5,6 +5,7 @@
 test -d $DOTFILES_DIR || mkdir $DOTFILES_DIR
 cp -rf "$(pwd)/dotfiles/." "$HOME/.dotfiles/"
 
+echo $separator
 echo "configuring dotfiles..."
 echo $separator
 

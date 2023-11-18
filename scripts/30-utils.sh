@@ -2,6 +2,9 @@
 
 source "./scripts/check-and-install-packages.sh" "${utils_list[@]}"
 
+echo $separator
+echo "Installing utils..." 
+echo $separator
 pacman -Qs auto-cpufreq	&&
 	echo "Enabling auto-cpufreq as a systemctl service" &&
 	# check if enabled and then -----

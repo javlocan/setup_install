@@ -131,7 +131,7 @@
         "format": " {icon} ",
         //"format":"{icon}",
         "format-icons": {
-            "1": "",
+            "1": "",
             "2": "",
             "3": "",
             "4": "",
@@ -204,13 +204,14 @@
     },
 
     "custom/files": {
-        "format": " ",
+        "format": " ",
         "on-click": "exec thunar",
         "tooltip": false
     },
 
     "custom/launcher": {
-        "format":" ",
+        // "format":" ",
+        "format":" ",
         "on-click": "exec wofi -c ~/.config/wofi/config -I",
         "tooltip": false,
     },

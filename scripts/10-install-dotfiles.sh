@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+echo $separator
 echo "Proceeding to install core packages"
 echo $separator
 
