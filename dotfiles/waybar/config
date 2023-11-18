@@ -49,7 +49,7 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% 🗲",
         "format-plugged": "{capacity}% ",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -127,14 +127,19 @@
     "sway/workspaces": {
         "disable-scroll": true,
         "disable-markup" : false,
-        "all-outputs": true,
-        "format": "  {icon}  ",
+        "all-outputs": false,
+        "format": " {icon} ",
         //"format":"{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
+            //"1": "",
+            //"2": "",
+            //"3": "",
+            //"4": "",
+            //"5": "",
+	    //"6": "",
+	    //"8": "",
+            //"9": "",
+	    //"10": "",
         }
     },
 
@@ -199,13 +204,14 @@
     },
 
     "custom/files": {
-        "format": " ",
+        "format": " ",
         "on-click": "exec thunar",
         "tooltip": false
     },
 
     "custom/launcher": {
-        "format":" ",
+        // "format":" ",
+        "format":" ",
         "on-click": "exec wofi -c ~/.config/wofi/config -I",
         "tooltip": false,
     },

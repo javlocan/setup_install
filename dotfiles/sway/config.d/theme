@@ -2,17 +2,17 @@
 exec_always ~/.config/sway/scripts/import-gsettings
 
 # Set inner/outer gaps
-gaps inner 2
+gaps inner 1
 gaps outer 0
 
 # Hide titlebar on windows:
-default_border pixel 1
+default_border pixel 4
 
 # Default Font
-font pango:Noto Sans Regular 10
+font pango:Noto Sans Regular 14
 
 # Thin borders:
-smart_borders on
+# smart_borders on
 
 # Set wallpaper:
 exec swaybg -i ~/.config/sway/sway.jpg

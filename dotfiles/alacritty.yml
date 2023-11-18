@@ -12,7 +12,7 @@ scrolling:
   multiplier: 3
 font:
   normal:
-    family: JetBrainsMono
+    family: JetBrainsMonoNerdFont
   size: 14
 key_bindings:
   - { key: F11, action: ToggleFullscreen }
