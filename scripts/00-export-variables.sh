@@ -16,6 +16,7 @@ export core_packages_list=(
 	"zsh-syntax-highlighting"
 	"zsh-thefuck-git"
 	"starship"
+	"ttf-jetbrains-mono-nerd"
 	"alacritty"
 	"tmux"
 	"tmux-plugin-manager"

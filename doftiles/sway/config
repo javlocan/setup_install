@@ -12,4 +12,3 @@ include $HOME/.config/sway/config.d/*
 # xwayland disable
 
 output * bg $HOME/.config/sway/sway.jpg fill
-#output * bg $HOME/.dotfiles/sway/sway.jpg fill
