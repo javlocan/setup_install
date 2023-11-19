@@ -15,7 +15,7 @@ Arc-Dark Color Scheme
 */
 @define-color highlight #69b6be ; /*#5294e2 ;*/
 /*@define-color base1  #404552 ;*/
-@define-color base1  #171819 ;
+@define-color base1  #131415 ;
 
 @keyframes blink-warning {
     70% {
@@ -113,6 +113,10 @@ Arc-Dark Color Scheme
 }
 
 #cpu.critical {
+    color: red;
+}
+
+#custom-keyboard-layout.enabled {
     color: red;
 }
 

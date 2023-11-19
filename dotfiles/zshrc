@@ -3,6 +3,9 @@
 APP_DIR="/usr/share"
 PLUGINS_DIR="${APP_DIR}/zsh/plugins"
 
+export EDITOR=vi
+KEYTIMEOUT=1
+
 # colors
 zstyle ':completion:*' list-colors ''
 alias ls="ls --color=auto"
@@ -22,21 +25,22 @@ setopt EXTENDED_HISTORY
 # fixing some keybindings bug in zsh
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
-#bindkey "\e[5~" beginning-of-history
-#bindkey "\e[6~" end-of-history
+bindkey "\e[5~" beginning-of-history
+bindkey "\e[6~" end-of-history
 bindkey "\e[3~" delete-char
-#bindkey "\e[2~" quoted-insert
-#bindkey "\e[5C" forward-word
-#bindkey "\eOc" emacs-forward-word
-#bindkey "\e[5D" backward-word
-#bindkey "\eOd" emacs-backward-word
-#bindkey "\ee[C" forward-word
-#bindkey "\ee[D" backward-word
+bindkey "\e[2~" quoted-insert
+bindkey "\e[5C" forward-word
+bindkey "\eOc" emacs-forward-word
+bindkey "\e[5D" backward-word
+bindkey "\eOd" emacs-backward-word
+bindkey "\ee[C" forward-word
+bindkey "\ee[D" backward-word
 
 # completions
 autoload -U compinit; compinit
 
 # plugins
+source "${PLUGINS_DIR}/zsh-vi-mode/zsh-vi-mode.plugin.zsh"
 source "${PLUGINS_DIR}/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
 source "${PLUGINS_DIR}/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"
 source "${PLUGINS_DIR}/zsh-thefuck-git/zsh-thefuck.plugin.zsh"
