@@ -16,3 +16,6 @@ success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set
 
 [directory]
 style = 'bold #69b6be'
+
+[lua]
+symbol = '󰢱 '

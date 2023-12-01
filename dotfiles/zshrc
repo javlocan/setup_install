@@ -54,5 +54,12 @@ source "${PLUGINS_DIR}/zsh-thefuck-git/zsh-thefuck.plugin.zsh"
 source "/usr/share/fzf/completion.zsh"
 source "/usr/share/fzf/key-bindings.zsh"
 
+
+# aliases
+alias vim="nvim"
+alias gss="git status"
+alias ga.="git add ."
+alias gau="git add -u"
+alias gcm="git commit -m"
 # prompt
 eval "$(starship init zsh)"
