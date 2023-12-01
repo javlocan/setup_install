@@ -61,5 +61,7 @@ alias gss="git status"
 alias ga.="git add ."
 alias gau="git add -u"
 alias gcm="git commit -m"
+alias gco="git checkout"
+
 # prompt
 eval "$(starship init zsh)"
