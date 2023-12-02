@@ -6,9 +6,14 @@ require("config.keymaps")
 require("config.options")
 
 require("lazy").setup({
-  { import = "theme.onedark" },
-  { import = "plugins" },
-  { import = "plugins.lsp" },
+  { import = "config.common" },
+
+  { import = "theme" },
+  { import = "nav" },
+  { import = "text" },
+  { import = "code" },
+  { import = "git" },
+  { import = "extra" },
 }, {
   install = {
     colorscheme = { "onedark" },
