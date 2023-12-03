@@ -1,3 +1,3 @@
-return {
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
-}
+-- return {
+--   vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]]),
+-- }
