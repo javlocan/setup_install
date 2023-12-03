@@ -20,6 +20,8 @@ return {
         graphql = { "prettier" },
         lua = { "stylua" },
         rust = { "rustfmt" },
+        bash = { "beautysh" },
+        zsh = { "beautysh" },
       },
       format_on_save = {
         lsp_fallback = true,

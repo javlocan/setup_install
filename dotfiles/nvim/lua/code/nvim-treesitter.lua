@@ -19,8 +19,10 @@ return {
       -- configure treesitter
       treesitter.setup({ -- enable syntax highlighting
         highlight = {
+          additional_vim_regex_highlighting = false,
           enable = true,
         },
+        auto_install = true,
         -- enable indentation
         indent = { enable = true },
         -- enable autotagging (w/ nvim-ts-autotag plugin)
@@ -38,7 +40,6 @@ return {
           "css",
           "markdown",
           "markdown_inline",
-          "svelte",
           "graphql",
           "bash",
           "lua",
@@ -47,6 +48,7 @@ return {
           "gitignore",
           "query",
           "rust",
+          "toml",
         },
         incremental_selection = {
           enable = true,
@@ -56,6 +58,11 @@ return {
             scope_incremental = false,
             node_decremental = "<bs>",
           },
+        },
+        rainbow = {
+          enable = true,
+          extended_mode = true,
+          max_file_lines = nil,
         },
         -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
         -- context_commentstring = {

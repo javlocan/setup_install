@@ -9,11 +9,13 @@ echo "Sourcing variables..."
 echo $separator
 
 export DOTFILES_DIR="$HOME/.dotfiles"
-export CURRENT_DIR="$(pwd)"
+
+CURRENT_DIR="$(pwd)"
+export CURRENT_DIR
 
 export core_packages_list=(
 	"zsh"
-	"zsh-completions"
+ 	"zsh-completions"
 	"zsh-autosuggestions" 
 	"zsh-syntax-highlighting"
 	"zsh-thefuck-git"
@@ -25,6 +27,12 @@ export core_packages_list=(
 	"tmux-plugin-manager"
 	"neovim"
 	)
+
+export code_packages_list=(
+  "npm"
+  "rustup"
+  "luarocks"
+  )
 
 export utils_list=(
 	"auto-cpufreq"

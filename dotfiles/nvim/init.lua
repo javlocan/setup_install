@@ -12,6 +12,7 @@ require("lazy").setup({
   { import = "nav" },
   { import = "text" },
   { import = "code" },
+  { import = "code.lsp" },
   { import = "git" },
   { import = "extra" },
 }, {

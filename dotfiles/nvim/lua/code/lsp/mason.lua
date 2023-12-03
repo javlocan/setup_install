@@ -6,9 +6,9 @@ return {
   },
   config = function()
     -- import mason
+    -- import mason-lspconfig
     local mason = require("mason")
 
-    -- import mason-lspconfig
     local mason_lspconfig = require("mason-lspconfig")
 
     local mason_tool_installer = require("mason-tool-installer")
@@ -24,20 +24,22 @@ return {
       },
     })
 
+    local servers = {
+      -- front end bs
+      "tsserver",
+      "html",
+      "cssls",
+      "tailwindcss",
+      "lua_ls",
+      "graphql",
+      -- real shit
+      "rust_analyzer",
+      "bashls",
+    }
+
     mason_lspconfig.setup({
-      -- list of servers for mason to install
-      ensure_installed = {
-        "tsserver",
-        "html",
-        "cssls",
-        "tailwindcss",
-        "svelte",
-        "lua_ls",
-        "graphql",
-        "emmet_ls",
-        "prismals",
-        "pyright",
-      },
+      -- tbl_keys returns keys from a table
+      ensure_installed = servers,
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
     })
@@ -45,11 +47,10 @@ return {
     mason_tool_installer.setup({
       ensure_installed = {
         "prettier", -- prettier formatter
-        "stylua", -- lua formatter
-        "isort", -- python formatter
-        "black", -- python formatter
-        "pylint", -- python linter
         "eslint_d", -- js linter
+        "stylua", -- lua formatter
+        "shellcheck",
+        "beautysh",
       },
     })
   end,
