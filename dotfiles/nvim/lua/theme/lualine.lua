@@ -5,15 +5,16 @@ return {
     local lualine = require("lualine")
     local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
-    local custom_onedark = require("lualine.themes.onedark")
-    custom_onedark.normal.a.bg = "#41b0ba"
-    custom_onedark.command.a.bg = "#eddb37"
-    custom_onedark.insert.a.bg = "#3442b5"
-    custom_onedark.normal.c.bg = "#222222"
+    -- local custom_onedark = require("lualine.themes.onedark")
+    -- custom_onedark.normal.a.bg = "#41b0ba"
+    -- custom_onedark.command.a.bg = "#eddb37"
+    -- custom_onedark.insert.a.bg = "#3442b5"
+    -- custom_onedark.normal.c.bg = "#222222"
     -- configure lualine with modified theme
+
     lualine.setup({
       options = {
-        theme = custom_onedark,
+        theme = "gruvbox-material",
       },
       sections = {
         lualine_x = {
