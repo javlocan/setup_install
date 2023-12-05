@@ -35,6 +35,7 @@ return {
       -- real shit
       "rust_analyzer",
       "bashls",
+      "kotlin_language_server",
     }
 
     mason_lspconfig.setup({
@@ -51,6 +52,7 @@ return {
         "stylua", -- lua formatter
         "shellcheck",
         "beautysh",
+        "ktlint",
       },
     })
   end,
